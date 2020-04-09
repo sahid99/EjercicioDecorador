@@ -18,13 +18,13 @@ namespace EjercicioDecorador.Moldels
             string saborActual = helado.ObtenerDescripcion();
             if (_sabores.Contains(saborActual))
             {
-                int contador = ObtenerNumeroBolas();
+                int contador = _helado.ObtenerNumeroBolas();
                 if (contador >= 5)
                 {
                     Console.WriteLine("Exceso de bolas.");
                     return;
                 }
-                _NumeroBolas += 1;
+                _helado.AgregarBola();
             }
             _helado = helado;
         }
@@ -40,6 +40,11 @@ namespace EjercicioDecorador.Moldels
         public int ObtenerNumeroBolas()
         {
             return _NumeroBolas;
+        }
+
+        public void AgregarBola()
+        {
+            _NumeroBolas += 1;
         }
     }
 }

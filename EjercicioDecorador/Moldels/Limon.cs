@@ -4,7 +4,12 @@ using System.Text;
 
 namespace EjercicioDecorador.Moldels
 {
-    class Limon
+    public class Limon : IngredienteDecorador
     {
+        public Limon(IHelado helado) : base(helado)
+        {
+            _nombre = "Limon";
+            _precio = 5.0;
+        }
     }
 }

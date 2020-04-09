@@ -20,5 +20,9 @@ namespace EjercicioDecorador.Moldels
         {
             return _NumeroBolas;
         }
+        public void AgregarBola()
+        {
+            _NumeroBolas += 1;
+        }
     }
 }

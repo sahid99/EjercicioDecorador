@@ -4,7 +4,22 @@ using System.Text;
 
 namespace EjercicioDecorador.Moldels
 {
-    class Canasta
+    public class Canasta : IHelado
     {
+        private int _NumeroBolas;
+        public double ObtenerCosto()
+        {
+            return 0.5;
+        }
+
+        public string ObtenerDescripcion()
+        {
+            return "Canasta";
+        }
+
+        public int ObtenerNumeroBolas()
+        {
+            return _NumeroBolas;
+        }
     }
 }
