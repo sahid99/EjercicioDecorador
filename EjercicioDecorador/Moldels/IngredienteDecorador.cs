@@ -10,22 +10,9 @@ namespace EjercicioDecorador.Moldels
         private int _NumeroBolas;
         protected string _nombre = "Sin Definir";
         protected double _precio = 0.0;
-        private string[] _nombresSabores = {"Limon", "Fresa", "Mango", "Chocolate", "ChocoChips", "Vainilla"};
-        private List<String> _sabores;
+        //private string[] _nombresSabores = {"Limon", "Fresa", "Mango", "Chocolate", "ChocoChips", "Vainilla"};
         public IngredienteDecorador(IHelado helado)
         {
-            _sabores = new List<string>(_nombresSabores);
-            string saborActual = helado.ObtenerDescripcion();
-            if (_sabores.Contains(saborActual))
-            {
-                int contador = _helado.ObtenerNumeroBolas();
-                if (contador >= 5)
-                {
-                    Console.WriteLine("Exceso de bolas.");
-                    return;
-                }
-                _helado.AgregarBola();
-            }
             _helado = helado;
         }
         public double ObtenerCosto()
@@ -36,15 +23,6 @@ namespace EjercicioDecorador.Moldels
         public string ObtenerDescripcion()
         {
             return $"{_helado.ObtenerDescripcion()}, {_nombre}";
-        }
-        public int ObtenerNumeroBolas()
-        {
-            return _NumeroBolas;
-        }
-
-        public void AgregarBola()
-        {
-            _NumeroBolas += 1;
         }
     }
 }

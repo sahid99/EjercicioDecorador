@@ -8,6 +8,5 @@ namespace EjercicioDecorador.Moldels
     {
         string ObtenerDescripcion();
         double ObtenerCosto();
-        int ObtenerNumeroBolas();
     }
 }

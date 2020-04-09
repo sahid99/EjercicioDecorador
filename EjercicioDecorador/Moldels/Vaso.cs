@@ -6,7 +6,6 @@ namespace EjercicioDecorador.Moldels
 {
     public class Vaso : IHelado
     {
-        private int _NumeroBolas;
         public double ObtenerCosto()
         {
             return 0.0;
@@ -15,14 +14,6 @@ namespace EjercicioDecorador.Moldels
         public string ObtenerDescripcion()
         {
             return "Vaso";
-        }
-        public int ObtenerNumeroBolas()
-        {
-            return _NumeroBolas;
-        }
-        public void AgregarBola()
-        {
-            _NumeroBolas += 1;
         }
     }
 }

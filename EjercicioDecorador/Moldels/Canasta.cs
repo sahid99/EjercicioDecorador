@@ -6,20 +6,14 @@ namespace EjercicioDecorador.Moldels
 {
     public class Canasta : IHelado
     {
-        private int _NumeroBolas;
         public double ObtenerCosto()
         {
-            return 0.5;
+            return 1.0;
         }
 
         public string ObtenerDescripcion()
         {
             return "Canasta";
-        }
-
-        public int ObtenerNumeroBolas()
-        {
-            return _NumeroBolas;
         }
     }
 }
