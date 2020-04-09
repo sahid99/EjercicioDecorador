@@ -8,7 +8,7 @@ namespace EjercicioDecorador.Moldels
     {
         public Chocolate(IHelado helado) : base(helado)
         {
-            _nombre = "Chocolate";
+            _nombre = "Bola de Chocolate";
             _precio = 8.0;
         }
     }

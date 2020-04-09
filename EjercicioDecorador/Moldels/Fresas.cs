@@ -4,11 +4,11 @@ using System.Text;
 
 namespace EjercicioDecorador.Moldels
 {
-    public class Vainilla : IngredienteDecorador
+    public class Fresas : IngredienteDecorador
     {
-        public Vainilla(IHelado helado) : base(helado)
+        public Fresas(IHelado helado) : base(helado)
         {
-            _nombre = "Bola de Vainilla";
+            _nombre = "Fresas";
             _precio = 7.0;
         }
     }
